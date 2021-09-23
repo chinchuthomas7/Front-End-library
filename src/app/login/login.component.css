@@ -1,0 +1,24 @@
+
+h1{
+    color: deepskyblue;
+    text-align: center;
+}
+
+label{
+  color:coral;
+  margin-top: 10px;
+  text-align: center;
+}
+input{
+  width:150px ;
+}
+  
+.frm{
+  margin-left: 600px;
+}
+   
+  
+  .btn{
+    color: beige;
+    margin-left: 40px;
+  }

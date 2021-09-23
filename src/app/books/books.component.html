@@ -1,0 +1,27 @@
+
+<h1>{{title}}</h1>
+<div class="row">
+    <div class="card" id="thumbnail" style="width: 18rem;" *ngFor='let book of books'>
+    <img [src]='book.imageUrl'
+    [title]='book.bookName'
+    [style.width.px]='imageWidth'
+    
+    [style.margin.px]='imageMargin'
+    
+    class="card-img-top"  alt="Card image cap" >
+    <div class="card-body">
+      <h5 class="card-title">{{book.bookName}}</h5>
+    </div>
+    
+    <ul class="list-group list-group-flush">
+      <li class="card-body"><b>Author:</b> <i>{{book.bookAuthor}}</i></li>
+      <li class="list-group-item"><b>Genre:</b><i>{{book.genre}}</i></li>
+      
+    </ul>
+    <div class="card-body">
+      <button class="btn" *ngIf=_auth.loggedIn() (click)="editBook(book)">Edit</button> 
+     <button class="btn"  *ngIf=_auth.loggedIn() (click)="deleteBook(book)">Delete</button>
+  
+    </div>
+  </div>
+</div>

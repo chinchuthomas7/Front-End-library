@@ -1,0 +1,51 @@
+h1{
+    text-align: center;
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root {
+    --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+  }
+
+.card{
+    margin:10px;
+    text-align: center;
+    margin-left: 30px;
+    background: #222;
+    border: 1px solid #dd2476;
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+   
+   }
+   #thumbnail {
+    box-shadow: 5px 10px 20px rgba(7, 151, 218, 0.308), 0 10px 10px rgba(47, 252, 6, 0.23);
+  }
+
+  body {
+    background: #111 !important;
+  }
+  
+  button{
+      margin: 5px;
+  }
+
+  button{
+    color: lightseagreen;
+    margin: 5px;
+    border: 2px solid;
+    border-image-slice: 1;
+    background: var(--gradient)rgb(26, 150, 172) ;
+    background-clip: text inherit;
+    -webkit-text-fill-color: transparent !important;
+    border-image-source:  var(--gradient) !important; 
+    text-decoration: none;
+    transition: all .4s ease;
+}
+.btn:hover, .btn:focus {
+  background: var(--gradient) !important;
+background-clip: none !important;
+-webkit-text-fill-color: rgb(255, 255, 255) !important;
+border: 2px solid rgb(27, 216, 241) !important; 
+box-shadow: rgb(98, 197, 5) 1px 0 10px;
+text-decoration: lightcoral;
+}

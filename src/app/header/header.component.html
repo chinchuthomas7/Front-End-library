@@ -1,0 +1,25 @@
+
+<div class="head" style="text-align:center">
+    <h1 class="glow">
+       {{ title }}
+    </h1>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       
+
+    <a class="nav-link" routerLink="/login" *ngIf="!_auth.loggedIn()" routerLinkActive="active" >Login</a>
+
+    <a routerLink="/books" class="nav-link" style="cursor:pointer">Books</a>
+    <a routerLink="/authors" class="nav-link" style="cursor:pointer">Authors</a>
+    
+    <a  class="nav-link" style="cursor:pointer"  *ngIf="_auth.loggedIn()" (click)="loggedUser()"  >Add Book</a>
+
+    <a  class="nav-link" style="cursor:pointer" *ngIf="_auth.loggedIn()"  routerLink='/addauthor'  >Add Author</a>
+
+   <a  class="nav-link" style="cursor:pointer" *ngIf="_auth.loggedIn()"  (click)="logoutUser()"  >Logout</a>
+
+    
+</div>

@@ -1,0 +1,40 @@
+
+
+<div class="card">
+    <form (ngSubmit)="AddBook()">
+
+        <div class="card-header">
+            <h1>{{title}}</h1>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><label for="bookName"> Book Name</label></td>
+                            <td><input type="text" name="b_name" [(ngModel)]="bookItem.bookName"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Author"> Author</label></td>
+                            <td><input type="text" name="b_author" [(ngModel)]="bookItem.bookAuthor"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="genre"> Genre</label></td>
+                            <td><input type="text" name="b_genre" [(ngModel)]="bookItem.genre"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="image"> Image Url</label></td>
+                            <td><input type="text" name="b_image" [(ngModel)]="bookItem.imageUrl"/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" class="btn btn-primary" value="Submit"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
+
+
